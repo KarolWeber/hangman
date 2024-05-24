@@ -82,3 +82,9 @@ body {
     text-align: center;
     text-shadow: 2px 1px white;
 }
+
+#footer {
+    text-align: right;
+    text-shadow: 2px 1px white;
+    padding-right: 30px;
+}
