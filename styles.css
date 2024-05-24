@@ -47,7 +47,7 @@ body {
 #container-hanged-man {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 800px;
     padding: 20px 20px 20px 20px;
     margin: 0 auto;
@@ -57,12 +57,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
 #alphabet {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -76,11 +76,14 @@ body {
 
 .letter {
     border: 1px solid black;
+    padding: 5px;
     height: 30px;
     width: 30px;
     margin: 10px;
     text-align: center;
     text-shadow: 2px 1px white;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
 }
 
 #footer {
