@@ -16,6 +16,10 @@ body {
 
 .buttons {
     padding: 15px;
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #newWord {
@@ -27,6 +31,20 @@ body {
     box-shadow: 10px;
 }
 
+#hint {
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid ridge;
+    height: 30px;
+    width:  150px;
+    background-color: transparent;
+    box-shadow: 10px;
+}
+
+#hint:hover {
+    background-color: yellowgreen;
+}
+
 #newWord:hover {
     background-color: rgb(228, 133, 133);
     border: 1px solid black;
@@ -36,12 +54,16 @@ body {
     text-align: center;
     padding: 15px;
     width: 800px;
-    margin: 20px auto;
-    padding: 20px 20px 20px 20px;
+    margin: 10px auto;
+    padding: 10px;
     letter-spacing: 15px;
     font-size: 35px;    
     text-shadow: 2px 1px white;
 
+}
+
+#points {
+    text-shadow: 2px 1px white;
 }
 
 #container-hanged-man {
