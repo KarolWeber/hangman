@@ -1,0 +1,84 @@
+body {
+    background-color: white;
+    color: #000;
+    font-size: 25px;
+
+}
+
+#container {
+    text-align: center;
+    width: 900px;
+    margin: 0 auto 0 auto;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid black;
+    background-image:  url('./images/background.png');
+}
+
+.buttons {
+    padding: 15px;
+}
+
+#newWord {
+    border-radius: 10px;
+    border: 1px solid ridge;
+    height: 50px;
+    width:  150px;
+    background-color: transparent;
+    box-shadow: 10px;
+}
+
+#newWord:hover {
+    background-color: rgb(228, 133, 133);
+    border: 1px solid black;
+}
+
+#guess {
+    text-align: center;
+    padding: 15px;
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px 20px 20px 20px;
+    letter-spacing: 15px;
+    font-size: 35px;    
+    text-shadow: 2px 1px white;
+
+}
+
+#container-hanged-man {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 800px;
+    padding: 20px 20px 20px 20px;
+    margin: 0 auto;
+}
+
+#hanged-man {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+#alphabet {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    padding: 20px 20px 20px 20px;
+    height: 500px;
+    width: 350px;
+    margin: 10px auto
+}
+
+.letter {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 2px 1px white;
+}
