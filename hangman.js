@@ -113,12 +113,14 @@ var words = [
     { "phrase": "Emocje", "hint": "Intensywne uczucia.", "category": "Abstrakcyjne" }
 ];
 
-var randomPhrase = words[Math.floor(Math.random() * words.length)];
+randomElement = Math.floor(Math.random() * words.length)
+var randomPhrase = words[randomElement];
 var phrase = randomPhrase['phrase'];
 var hint = randomPhrase['hint'];
 var category = randomPhrase['category'];
 var hiddenPhrase = phrase.replace(/[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, '_');
 var phraseLength = hiddenPhrase.length;
+words.splice(randomElement, 1);
 var notMatched = 0;
 var points = 0;
 var freeHint = true;
@@ -203,11 +205,13 @@ window.onload = function () {
             debugger;
             notMatched = 0;
             gameOver = false;
-            RandonPhrase = words[Math.floor(Math.random() * words.length)];
+            newElement = Math.floor(Math.random() * words.length)
+            RandonPhrase = words[newElement];
             phrase = RandonPhrase["phrase"];
             hiddenPhrase = phrase.replace(/[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, '_');
             category = RandonPhrase["category"]
             hint = RandonPhrase["hint"];
+            words.splice(newElement, 1);
             document.getElementById("hanged-man").innerHTML = '<img src="" alt="" style="width: 350; height: 500;"></img>';
             hitnIsActive = false
             word()
