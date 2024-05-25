@@ -62,6 +62,10 @@ body {
 
 }
 
+#category {
+    text-shadow: 2px 1px white;
+}
+
 #points {
     text-shadow: 2px 1px white;
 }
