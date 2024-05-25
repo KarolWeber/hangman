@@ -120,6 +120,7 @@ var phraseLength = hiddenPhrase.length;
 var notMatched = 0;
 var points = 0
 var freeHint = true
+var hitnIsActive = false
 
 window.onload = function () {
 
@@ -156,22 +157,30 @@ window.onload = function () {
         let hintButton = document.getElementById("hint");
         hintButton.addEventListener("click", () => {
             if (freeHint === true) {
-                alert("First hint is free!\n" + hint)
-                freeHint = false
+                alert("First hint is free!\n" + hint);
+                freeHint = false;
+                hitnIsActive = true;
             }
             else {
-                if (points >= 30) {
-                    newPoints = points - 30
-                    points = newPoints
-                    alert(hint)
-                    document.getElementById("points").innerHTML = newPoints
+                if (hitnIsActive === true) {
+                    alert(hint);
                 }
                 else {
-                    alert("You need 30 points")
+                    if (points >= 30) {
+                        newPoints = points - 30;
+                        points = newPoints;
+                        alert(hint);
+                        document.getElementById("points").innerHTML = newPoints;
+                        hitnIsActive = true;
+                    }
+                    else {
+                        alert("You need 30 points")
+                    }
                 }
+
             }
-            
-            
+
+
         });
     }
 
@@ -190,6 +199,7 @@ window.onload = function () {
             hiddenPhrase = phrase.replace(/[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, '_');
             hint = RandonPhrase["hint"];
             document.getElementById("hanged-man").innerHTML = '<img src="" alt="" style="width: 350; height: 500;"></img>';
+            hitnIsActive = false
             word()
             resetLetters()
             buttonText("Reset Game")
@@ -220,7 +230,7 @@ window.onload = function () {
 }
 
 function addPoints(index) {
-    var newPoints = points + index 
+    var newPoints = points + index
     document.getElementById("points").innerHTML = newPoints;
     points = newPoints
 
