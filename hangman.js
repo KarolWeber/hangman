@@ -280,6 +280,7 @@ function check(index) {
         document.getElementById(element).style.color = '#00C000';
         document.getElementById(element).style.border = '1px solid #00C000';
         document.getElementById(element).style.cursor = 'default';
+        document.getElementById(element).style.pointerEvents  = 'none';
         setPhrase()
         var revealedPhrase = document.getElementById("guess").innerHTML;
         if (revealedPhrase === phrase) {
@@ -300,6 +301,7 @@ function check(index) {
         document.getElementById(element).style.border = '1px solid #C00000';
         document.getElementById(element).style.cursor = 'default';
         document.getElementById(element).setAttribute("onclick", ";");
+        document.getElementById(element).style.pointerEvents  = 'none';
         notMatched++;
         var gallows = "./images/gallows" + notMatched + ".png";
         document.getElementById("hanged-man").innerHTML = '<img src="' + gallows + '" alt="" style="width: 350; height: 500;"></img>';
