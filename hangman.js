@@ -233,6 +233,7 @@ window.onload = function () {
                 letters[i].style.removeProperty('color');
                 letters[i].style.removeProperty('border');
                 letters[i].style.removeProperty('cursor');
+                letters[i].style.pointerEvents = 'auto';
             }
 
         }
