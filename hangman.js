@@ -278,7 +278,7 @@ function check(index) {
         var element = "lit" + index;
         document.getElementById(element).style.background = '#003300';
         document.getElementById(element).style.color = '#00C000';
-        document.getElementById(element).style.border = '3px solid #00C000';
+        document.getElementById(element).style.border = '1px solid #00C000';
         document.getElementById(element).style.cursor = 'default';
         setPhrase()
         var revealedPhrase = document.getElementById("guess").innerHTML;
@@ -297,7 +297,7 @@ function check(index) {
         var element = "lit" + index;
         document.getElementById(element).style.background = '#330000';
         document.getElementById(element).style.color = '#C00000';
-        document.getElementById(element).style.border = '3px solid #C00000';
+        document.getElementById(element).style.border = '1px solid #C00000';
         document.getElementById(element).style.cursor = 'default';
         document.getElementById(element).setAttribute("onclick", ";");
         notMatched++;

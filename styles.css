@@ -113,7 +113,10 @@ body {
 }
 
 .letter:hover {
-    color: yellow;
+    border: 1px solid #00C000;
+    color: yellowgreen;
+    text-shadow: 2px 1px black;
+}
 
 #footer {
     text-align: right;
