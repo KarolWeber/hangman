@@ -110,7 +110,58 @@ var words = [
     { "phrase": "Globus", "hint": "Trójwymiarowe odwzorowanie Ziemi.", "category": "Przedmioty" },
     { "phrase": "Magia", "hint": "Nadprzyrodzone działanie.", "category": "Abstrakcyjne" },
     { "phrase": "Przyjaźń", "hint": "Silne uczucie łączące przyjaciół.", "category": "Abstrakcyjne" },
-    { "phrase": "Emocje", "hint": "Intensywne uczucia.", "category": "Abstrakcyjne" }
+    { "phrase": "Emocje", "hint": "Intensywne uczucia.", "category": "Abstrakcyjne" },
+    { "phrase": "Czekolada", "hint": "Słodki smakołyk z kakao.", "category": "Jedzenie" },
+    { "phrase": "Komedia", "hint": "Film lub sztuka, która ma na celu rozbawienie widzów.", "category": "Rozrywka" },
+    { "phrase": "Lampa", "hint": "Urządzenie dające światło.", "category": "Przedmioty" },
+    { "phrase": "Okulary", "hint": "Pomagają widzieć lepiej.", "category": "Przedmioty" },
+    { "phrase": "Muzeum", "hint": "Miejsce, gdzie eksponuje się zabytki.", "category": "Miejsca" },
+    { "phrase": "Deszcz", "hint": "Opady atmosferyczne w postaci kropel wody.", "category": "Przyroda" },
+    { "phrase": "Gitara", "hint": "Instrument muzyczny strunowy.", "category": "Przedmioty" },
+    { "phrase": "Kino", "hint": "Miejsce, gdzie ogląda się filmy.", "category": "Miejsca" },
+    { "phrase": "Słodycze", "hint": "Słodkie przekąski i smakołyki.", "category": "Jedzenie" },
+    { "phrase": "Motyl", "hint": "Kolorowy owad, który przechodzi metamorfozę.", "category": "Zwierzęta" },
+    { "phrase": "Zamek", "hint": "Dawna warownia lub budowla obronna.", "category": "Miejsca" },
+    { "phrase": "List", "hint": "Pisany środek komunikacji.", "category": "Przedmioty" },
+    { "phrase": "Długopis", "hint": "Narzędzie do pisania z tuszem.", "category": "Przedmioty" },
+    { "phrase": "Lato", "hint": "Jedna z czterech pór roku.", "category": "Czas" },
+    { "phrase": "Zima", "hint": "Pora roku z niskimi temperaturami i śniegiem.", "category": "Czas" },
+    { "phrase": "Śnieg", "hint": "Opady atmosferyczne w postaci białych płatków.", "category": "Przyroda" },
+    { "phrase": "Rowerek", "hint": "Pojazd napędzany siłą nóg.", "category": "Transport" },
+    { "phrase": "Samolot", "hint": "Środek transportu lotniczego.", "category": "Transport" },
+    { "phrase": "Zupa", "hint": "Płynna potrawa jedzona łyżką.", "category": "Jedzenie" },
+    { "phrase": "Drzewa", "hint": "Wysokie rośliny z pniem i koroną.", "category": "Przyroda" },
+    { "phrase": "Plaża", "hint": "Miejsce nad brzegiem morza z piaskiem.", "category": "Miejsca" },
+    { "phrase": "Rzeka", "hint": "Naturalny ciek wodny.", "category": "Przyroda" },
+    { "phrase": "Pociąg", "hint": "Środek transportu poruszający się po torach.", "category": "Transport" },
+    { "phrase": "Mieszkanie", "hint": "Miejsce, gdzie ludzie żyją i mieszkają.", "category": "Miejsca" },
+    { "phrase": "Ogórek", "hint": "Zielone warzywo często używane w sałatkach.", "category": "Jedzenie" },
+    { "phrase": "Mydło", "hint": "Środek czyszczący w formie stałej.", "category": "Przedmioty" },
+    { "phrase": "Krawat", "hint": "Element męskiej garderoby, noszony przy koszuli.", "category": "Ubrania" },
+    { "phrase": "Słońce", "hint": "Gwiazda dająca światło i ciepło.", "category": "Przyroda" },
+    { "phrase": "Podróż", "hint": "Przemieszczanie się z jednego miejsca do drugiego.", "category": "Abstrakcyjne" },
+    { "phrase": "Sen", "hint": "Stan odpoczynku ciała i umysłu.", "category": "Abstrakcyjne" },
+    { "phrase": "Drukarka", "hint": "Urządzenie do drukowania dokumentów.", "category": "Technologia" },
+    { "phrase": "Lustro", "hint": "Powierzchnia odbijająca obraz.", "category": "Przedmioty" },
+    { "phrase": "Jezioro", "hint": "Duży zbiornik wodny otoczony lądem.", "category": "Przyroda" },
+    { "phrase": "Rower", "hint": "Pojazd napędzany pedałami.", "category": "Transport" },
+    { "phrase": "Budynek", "hint": "Konstrukcja służąca do mieszkania lub pracy.", "category": "Miejsca" },
+    { "phrase": "Pokój", "hint": "Część mieszkania przeznaczona do konkretnego celu.", "category": "Miejsca" },
+    { "phrase": "Poduszka", "hint": "Miękki element używany do spania.", "category": "Przedmioty" },
+    { "phrase": "Kaktus", "hint": "Roślina z kolcami rosnąca w suchych regionach.", "category": "Przyroda" },
+    { "phrase": "Kawa", "hint": "Napój z palonych ziaren.", "category": "Jedzenie" },
+    { "phrase": "Perfumy", "hint": "Kosmetyk o przyjemnym zapachu.", "category": "Przedmioty" },
+    { "phrase": "Koło", "hint": "Okrągły element umożliwiający ruch pojazdu.", "category": "Przedmioty" },
+    { "phrase": "Robot", "hint": "Maszyna wykonująca automatycznie pewne zadania.", "category": "Technologia" },
+    { "phrase": "Galaktyka", "hint": "Ogromny system gwiazd, pyłu i ciemnej materii.", "category": "Przyroda" },
+    { "phrase": "Księżyc", "hint": "Naturalny satelita Ziemi.", "category": "Przyroda" },
+    { "phrase": "Droga", "hint": "Pas terenu przeznaczony do ruchu pojazdów.", "category": "Miejsca" },
+    { "phrase": "Rękawiczki", "hint": "Ochrona rąk przed zimnem lub brudem.", "category": "Ubrania" },
+    { "phrase": "Zabawa", "hint": "Czynność sprawiająca radość i relaks.", "category": "Abstrakcyjne" },
+    { "phrase": "Telewizor", "hint": "Urządzenie do oglądania programów telewizyjnych.", "category": "Technologia" },
+    { "phrase": "Wiatr", "hint": "Ruch powietrza w atmosferze.", "category": "Przyroda" },
+    { "phrase": "Staw", "hint": "Mały zbiornik wodny.", "category": "Przyroda" },
+    { "phrase": "Buty", "hint": "Obuwie na stopy.", "category": "Ubrania" }
 ];
 
 randomElement = Math.floor(Math.random() * words.length)
@@ -148,7 +199,7 @@ window.onload = function () {
     }
     word()
 
-    function setCategory () {
+    function setCategory() {
         let setCategory = document.getElementById("category")
         setCategory.innerHTML = category
     }
@@ -281,7 +332,7 @@ function check(index) {
         document.getElementById(element).style.color = '#00C000';
         document.getElementById(element).style.border = '1px solid #00C000';
         document.getElementById(element).style.cursor = 'default';
-        document.getElementById(element).style.pointerEvents  = 'none';
+        document.getElementById(element).style.pointerEvents = 'none';
         setPhrase()
         var revealedPhrase = document.getElementById("guess").innerHTML;
         if (revealedPhrase === phrase) {
@@ -302,7 +353,7 @@ function check(index) {
         document.getElementById(element).style.border = '1px solid #C00000';
         document.getElementById(element).style.cursor = 'default';
         document.getElementById(element).setAttribute("onclick", ";");
-        document.getElementById(element).style.pointerEvents  = 'none';
+        document.getElementById(element).style.pointerEvents = 'none';
         notMatched++;
         var gallows = "./images/gallows" + notMatched + ".png";
         document.getElementById("hanged-man").innerHTML = '<img src="' + gallows + '" alt="" style="width: 350; height: 500;"></img>';
