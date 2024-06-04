@@ -167,7 +167,7 @@ window.onload = function () {
         let hintButton = document.getElementById("hint");
         hintButton.addEventListener("click", () => {
             if (freeHint === true) {
-                alert("First hint is free!\n" + hint);
+                alert("Pierwsza podpowiedź jest darmowa!\n" + hint);
                 freeHint = false;
                 hitnIsActive = true;
             }
@@ -184,7 +184,7 @@ window.onload = function () {
                         hitnIsActive = true;
                     }
                     else {
-                        alert("You need 30 points")
+                        alert("Potrzeba 30 punktów")
                     }
                 }
 
@@ -200,7 +200,7 @@ window.onload = function () {
 
     function resetWord() {
         let button = document.getElementById("newWord");
-        button.innerHTML = "Reset Game";
+        button.innerHTML = "Restart gry";
         button.addEventListener("click", () => {
             debugger;
             notMatched = 0;
@@ -217,7 +217,7 @@ window.onload = function () {
             word()
             setCategory()
             resetLetters()
-            buttonText("Reset Game")
+            buttonText("Restart gry")
         })
 
     }
@@ -289,7 +289,7 @@ function check(index) {
             resetWordFunction()
             var victory = "./images/victory.png";
             document.getElementById("hanged-man").innerHTML = '<img src="' + victory + '" alt="" style="width: 350; height: 500;"></img>';
-            buttonTextFunction("New Game")
+            buttonTextFunction("Nowa gra")
             addPoints(20)
         }
         addPoints(10)
@@ -309,7 +309,7 @@ function check(index) {
         if (notMatched === 8) {
             document.getElementById('guess').innerHTML = phrase;
             disableLetters()
-            buttonTextFunction("New Game")
+            buttonTextFunction("Nowa gra")
             document.getElementById("points").innerHTML = 0
             points = 0
             freeHint = true
